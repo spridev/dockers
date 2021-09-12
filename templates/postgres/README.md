@@ -8,7 +8,7 @@ Location: [http://localhost:5432](http://localhost:5432)
 
 Location: [http://localhost:8080](http://localhost:8080)
 
-### Root Login
+### Login
 
 | Key  | Value | Variable |
 | :--- | :---- | :------- |
