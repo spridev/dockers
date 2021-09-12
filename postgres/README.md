@@ -1,12 +1,12 @@
 # Postgres
 
-## Database
+## 📦 Database
 
-[localhost:5432](http://localhost:5432)
+Location: [http://localhost:5432](http://localhost:5432)
 
-## Interface
+## 💻 Interface
 
-[localhost:8080](http://localhost:8080)
+Location: [http://localhost:8080](http://localhost:8080)
 
 ### Login
 
