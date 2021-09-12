@@ -12,7 +12,7 @@ services:
 
   # Interface
   adminer:
-    image: adminer
+    image: adminer:4
     restart: unless-stopped
     env_file: .env
     ports:
