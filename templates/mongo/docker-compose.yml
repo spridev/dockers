@@ -1,0 +1,22 @@
+services:
+
+  # Database
+  mongo:
+    image: mongo:5
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "27017:27017"
+    volumes:
+      - "mongo-data:/data/db"
+
+  # Interface
+  express:
+    image: mongo-express:1.0.0-alpha
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "8081:8081"
+
+volumes:
+  mongo-data: { }
