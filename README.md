@@ -2,6 +2,8 @@
 
 #### 🐳 A collection of useful `docker-compose.yml` templates.
 
+Note that these templates are intended for development purposes only.
+
 ## Templates
 
 | Name | Pulls | Stars |
