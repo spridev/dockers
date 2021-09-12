@@ -4,6 +4,23 @@
 
 Note that these templates are intended for development purposes only.
 
+## Usage
+
+Each template contains a `.env.example` file that defines many common environment variables. Copy and rename this file
+to `.env`. Changing the default values is highly recommended, especially by setting randomly generated passwords.
+
+Then, start a service using `make`:
+
+```shell
+make start SERVICE=postgres
+```
+
+or using `docker-compose` directly:
+
+```shell
+docker-compose -f ./templates/postgres/docker-compose.yml up
+```
+
 ## Templates
 
 | Name | Pulls | Stars |
