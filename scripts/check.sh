@@ -10,7 +10,7 @@ check() {
   return "$?"
 }
 
-for file in ../templates/*/docker-compose.yml; do
+for file in ./templates/*/docker-compose.yml; do
   if ! check "$file"; then
     echo "ERROR: $file"
     code=1
