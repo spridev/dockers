@@ -6,13 +6,20 @@ set -o pipefail
 code=0
 
 check() {
-  docker-compose --file "$1" config --quiet
+  # Copy environment variables
+  cp "$1/.env.example" "$1/.env"
+
+  # Run validation
+  docker-compose --file "$1/docker-compose.yml" config --quiet
+
+  # Return validation output
   return "$?"
 }
 
-for file in ./templates/*/docker-compose.yml; do
-  if ! check "$file"; then
-    echo "ERROR: $file"
+# Check each template
+for dir in ./templates/*; do
+  if ! check "$dir"; then
+    echo "ERROR: $dir"
     code=1
   fi
 done
