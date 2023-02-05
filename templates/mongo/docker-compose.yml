@@ -2,7 +2,7 @@ services:
 
   # Database
   mongo:
-    image: mongo:5
+    image: mongo:6
     restart: unless-stopped
     env_file: .env
     ports:
