@@ -1,0 +1,16 @@
+services:
+
+  # Storage & Interface
+  minio:
+    image: minio/minio
+    restart: unless-stopped
+    command: server /data --console-address ":9090"
+    env_file: .env
+    ports:
+      - "9000:9000"
+      - "9090:9090"
+    volumes:
+      - "minio-data:/data"
+
+volumes:
+  minio-data: { }
