@@ -10,10 +10,10 @@ Location: [http://localhost:8080](http://localhost:8080)
 
 ### Login
 
-| Key  | Value | Variable |
-| :--- | :---- | :------- |
-| System | `PostgreSQL` | |
-| Server | `postgres` | |
-| Username | `postgres` | `POSTGRES_USER` |
-| Password | `password` | `POSTGRES_PASSWORD` |
-| Database | | |
+| Key      | Value        | Variable            |
+|:---------|:-------------|:--------------------|
+| System   | `PostgreSQL` |                     |
+| Server   | `postgres`   |                     |
+| Username | `postgres`   | `POSTGRES_USER`     |
+| Password | `password`   | `POSTGRES_PASSWORD` |
+| Database |              |                     |

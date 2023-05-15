@@ -10,7 +10,7 @@ Location: [http://localhost:15672](http://localhost:15672)
 
 ### Login
 
-| Key  | Value | Variable |
-| :--- | :---- | :------- |
+| Key      | Value      | Variable                |
+|:---------|:-----------|:------------------------|
 | Username | `rabbitmq` | `RABBITMQ_DEFAULT_USER` |
 | Password | `password` | `RABBITMQ_DEFAULT_PASS` |
